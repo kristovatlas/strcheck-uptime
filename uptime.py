@@ -217,7 +217,7 @@ def send_email(message):
 		#multiple recipients
 		to_list = email_address_to.split(",")
 
-	s = smtplib.SMTP(email_server)
+	s = smtplib.SMTP(email_server, email_port) if email_port is not None and email_port else smtplib.SMTP(email_server)
 	try:
 		s.login(email_username, email_password)
 	except:

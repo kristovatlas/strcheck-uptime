@@ -67,6 +67,7 @@ email_server = config.get('Email','email_server')
 email_username = config.get('Email','email_username')
 email_password = config.get('Email','email_password')
 send_email_not_more_than_n_seconds = int(config.get('Email','send_email_not_more_than_n_seconds'))
+email_port = config.get('Email','email_port')
 
 ####################
 # GLOBAL VARIABLES #
